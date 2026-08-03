@@ -78,9 +78,9 @@ class MainActivity : AppCompatActivity() {
             clearWriting()
         }
 
-        val zenKurenaido = Typeface.createFromAsset(assets, "fonts/ZenKurenaido-Regular.ttf")
-        findViewById<TextView>(R.id.textViewYomi).typeface = zenKurenaido
-        findViewById<TextView>(R.id.textViewKanji).typeface = zenKurenaido
+        val previewFont = Typeface.createFromAsset(assets, "fonts/YujiSyuku-Regular.ttf")
+        findViewById<TextView>(R.id.textViewYomi).typeface = previewFont
+        findViewById<TextView>(R.id.textViewKanji).typeface = previewFont
 
         lastUri ?: return gotoSetup()
 

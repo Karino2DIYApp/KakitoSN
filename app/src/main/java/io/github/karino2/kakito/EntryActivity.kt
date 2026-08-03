@@ -45,18 +45,18 @@ class EntryActivity : AppCompatActivity() {
 
         entries.addAll(Entry.fromLastUri(this))
 
-        val zenKurenaido = Typeface.createFromAsset(assets, "fonts/ZenKurenaido-Regular.ttf")
+        val previewFont = Typeface.createFromAsset(assets, "fonts/YujiSyuku-Regular.ttf")
 
         adapter = object : ArrayAdapter<Entry>(this, R.layout.list_item_entry, entries) {
             override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
                 val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item_entry, parent, false)
                 val entry = getItem(position)!!
                 view.findViewById<TextView>(R.id.textViewYomi).apply {
-                    typeface = zenKurenaido
+                    typeface = previewFont
                     text = entry.yomi
                 }
                 view.findViewById<TextView>(R.id.textViewKanji).apply {
-                    typeface = zenKurenaido
+                    typeface = previewFont
                     text = entry.kanji
                 }
                 return view
