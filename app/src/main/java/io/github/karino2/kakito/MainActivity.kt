@@ -127,6 +127,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
+            R.id.action_add_entry -> {
+                Intent(this, EntryActivity::class.java).apply {
+                    putExtra("REQUEST_ADD_ENTRY", true)
+                }.also { startActivity(it) }
+                true
+            }
             R.id.action_edit_entries -> {
                 Intent(this, EntryActivity::class.java)
                     .also { startActivity(it) }

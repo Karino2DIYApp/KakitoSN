@@ -17,6 +17,10 @@
         android:title="Next"
         app:showAsAction="always" />
     <item
+        android:id="@+id/action_add_entry"
+        android:title="Add Entry"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_edit_entries"
         android:title="Edit Entries"
         app:showAsAction="never" />

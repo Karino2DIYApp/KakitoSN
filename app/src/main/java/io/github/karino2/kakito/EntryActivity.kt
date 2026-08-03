@@ -78,6 +78,10 @@ class EntryActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fabAdd).setOnClickListener {
             showEditDialog(null, -1)
         }
+
+        if (intent.getBooleanExtra("REQUEST_ADD_ENTRY", false)) {
+            showEditDialog(null, -1)
+        }
     }
 
     private fun showEditDialog(entry: Entry?, position: Int) {
