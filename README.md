@@ -6,4 +6,4 @@
 
 ## フォント
 
-本アプリでは、[Zen 紅道](https://github.com/googlefonts/zen-kurenaido) (SIL Open Font License 1.1) を使用しています。
+本アプリでは、[Yuji Syuku](https://fonts.google.com/specimen/Yuji+Syuku) (SIL Open Font License 1.1) を使用しています。
