@@ -28,11 +28,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    packaging {
-        jniLibs {
-            pickFirsts += "**/libc++_shared.so"
-        }
-    }
 }
 
 dependencies {
@@ -41,8 +36,6 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
-    implementation(libs.onyxsdk.pen)
-    implementation(libs.onyxsdk.device)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
